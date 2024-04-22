@@ -1288,6 +1288,9 @@ footer .footer-bo a{
     }
 }
 @media(max-width:990px){
+    .cursor{
+        display: none !important;
+    }
     header .navbar-toggler{
         box-shadow: none !important;
     }
