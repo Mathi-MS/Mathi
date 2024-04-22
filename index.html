@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Designluch</title>
+    <title>MS Mathi</title>
     <!-- css  -->
     <link rel="stylesheet" href="Assests/style.css">
     <!-- bootstrap  -->
@@ -1234,7 +1234,6 @@
             <p>Copyright &copy; <span id="year"></span> Design and Developed by <a href="index.html">MS Mathi</a></p>
         </div>
     </footer>
-   
 
     <div class="cursor">
         <p>Hello</p>
@@ -1526,6 +1525,12 @@
         window.addEventListener("load",function () {
             preloader.style.display = "none"
         })
+    </script>
+    <!-- mob-hide  -->
+    <script>
+        $('.navbar-nav>.nav-item>.nav-link').on('click', function () {
+          $('.navbar-collapse').collapse('hide');
+        });
     </script>
 </body>
 </html>
