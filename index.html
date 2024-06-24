@@ -38,14 +38,13 @@
     <div id="preloader">
         <img src="Assests/Images-M/preloader.png" alt="">
     </div>
-
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html" title="logo">
                 Mathi
               </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" >
                 <span class="navbar-toggler-icon">
                     <i class="fa-solid fa-bars-staggered"></i>
                 </span>
@@ -74,16 +73,39 @@
               </div>
             </div>
           </nav>
+          <!-- sidenav  -->
+           <nav class="side-nav">
+            <ul class="side-navlist">
+                <li class="nav-item sidenavmob">
+                  <a class="nav-link" href="#" title="Home">Home</a>
+                </li>
+                <li class="nav-item sidenavmob">
+                  <a class="nav-link act" href="#coding" title="About">About</a>
+                </li>
+                <li class="nav-item sidenavmob">
+                  <a class="nav-link act" href="#skills" title="Skills">Skills</a>
+                </li>
+                <li class="nav-item sidenavmob">
+                  <a class="nav-link act" href="#experience" title="Experience">Experience</a>
+                </li>
+                <li class="nav-item sidenavmob">
+                  <a class="nav-link act" href="#project" title="Projects">Works</a>
+                </li>
+                <div class="closetoggle">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+              </ul>
+           </nav>
     </header>
 
     <main>
         <section id="hero">
             <div class="hero-content">
                 <div class="float-one">
-                    <p>Freelancer</p>
+                    <p>MERN</p>
                 </div>
                 <div class="float-two" >
-                    <p>Front-End developer</p>
+                    <p>UI/UX developer</p>
                 </div>
                 <h2 >
                     M.S.Mathiazhagan
@@ -342,11 +364,35 @@
                     <div class="item">
                         <div class="item-box">
                             <div class="skill-img">
+                                <img src="Assests/Images-M/skill-6.png" alt="skill">
+                            </div>
+                            <h3>Responsive design</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-box">
+                            <div class="skill-img">
+                                <img src="Assests/Images-M/skill-7.png" alt="skill">
+                            </div>
+                            <h3>PSD Conversion</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-box">
+                            <div class="skill-img">
                                 <img src="Assests/Images-M/skill-3.png" alt="skill">
                             </div>
                             <h3>Bootstrap</h3>
                         </div>
                     </div> 
+                    <div class="item">
+                        <div class="item-box">
+                            <div class="skill-img">
+                                <img src="Assests/Images-M/skill-9.png" alt="skill">
+                            </div>
+                            <h3>Tailwind</h3>
+                        </div>
+                    </div>
                     <div class="item">
                         <div class="item-box">
                             <div class="skill-img">
@@ -366,17 +412,17 @@
                     <div class="item">
                         <div class="item-box">
                             <div class="skill-img">
-                                <img src="Assests/Images-M/skill-6.png" alt="skill">
+                                <img src="Assests/Images-M/skill-10.png" alt="skill">
                             </div>
-                            <h3>Responsive design</h3>
+                            <h3>Node</h3>
                         </div>
                     </div>
                     <div class="item">
                         <div class="item-box">
                             <div class="skill-img">
-                                <img src="Assests/Images-M/skill-7.png" alt="skill">
+                                <img src="Assests/Images-M/skill-11.png" alt="skill">
                             </div>
-                            <h3>PSD Conversion</h3>
+                            <h3>Mongo DB</h3>
                         </div>
                     </div>
                     <div class="item">
@@ -1552,5 +1598,23 @@
           $('.navbar-collapse').collapse('hide');
         });
     </script>
+    <!-- sidenavmob  -->
+     <script>
+        var sidenavmob = document.querySelectorAll(".sidenavmob")
+        var sidenav = document.querySelector(".side-nav")
+        var toggler = document.querySelector(".navbar-toggler")
+        var closetoggle = document.querySelector(".closetoggle")
+        sidenavmob.forEach((data)=>{
+            data.addEventListener("click",(event)=>{
+                sidenav.style.transform="translateX(-100%)"
+            })
+        })
+        toggler.addEventListener("click",()=>{
+                sidenav.style.transform="translateX(0%)"
+        })
+        closetoggle.addEventListener("click",()=>{
+                sidenav.style.transform="translateX(-100%)"
+        })
+     </script>
 </body>
 </html>
