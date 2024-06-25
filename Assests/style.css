@@ -201,7 +201,7 @@ header .side-navlist{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 0px;
     padding: 0px;
     width: 100%;
     height: 100%;
@@ -227,6 +227,34 @@ header .sideenav .act:hover{
 }
 header .sideenav .act.active{
     color: #3789e9;
+}
+header .sidenavicons a{
+    text-decoration: none;
+    width:40px;
+    height:40px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #363636;
+    border-radius: 200px;
+    font-size: 20px;
+    margin: 20px 0px;
+    color: white;
+}
+header .sidenavicons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+header .namee {
+    font-family: U-semibold;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
 }
 
 #hero{
