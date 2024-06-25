@@ -64,7 +64,7 @@
                     <a class="nav-link act" href="#experience" title="Experience">Experience</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link act" href="#project" title="Projects">Works</a>
+                    <a class="nav-link act" href="work.html" title="Projects">Works</a>
                   </li>
                   <li class="nav-item contact">
                     <a class="nav-link" href="tel:+91 9943431297" title="contact"><i class="fa-solid fa-phone"></i>Call Directly</a>
@@ -74,10 +74,10 @@
             </div>
           </nav>
           <!-- sidenav  -->
-           <nav class="side-nav">
+           <nav class="side-nav sideenav">
             <ul class="side-navlist">
                 <li class="nav-item sidenavmob">
-                  <a class="nav-link" href="#" title="Home">Home</a>
+                  <a class="nav-link act active" href="#" title="Home">Home</a>
                 </li>
                 <li class="nav-item sidenavmob">
                   <a class="nav-link act" href="#coding" title="About">About</a>
@@ -89,7 +89,7 @@
                   <a class="nav-link act" href="#experience" title="Experience">Experience</a>
                 </li>
                 <li class="nav-item sidenavmob">
-                  <a class="nav-link act" href="#project" title="Projects">Works</a>
+                  <a class="nav-link act" href="work.html" title="Projects">Works</a>
                 </li>
                 <div class="closetoggle">
                     <i class="fa-solid fa-xmark"></i>
@@ -440,7 +440,7 @@
         <section id="project">
             <div class="project-content">
                 <h2>Works</h2>
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                       <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane" type="button" role="tab" aria-controls="all-tab-pane" aria-selected="true">all</button>
                     </li>
@@ -453,8 +453,8 @@
                     <li class="nav-item" role="presentation">
                       <button class="nav-link" id="process-tab" data-bs-toggle="tab" data-bs-target="#process-tab-pane" type="button" role="tab" aria-controls="process-tab-pane" aria-selected="false">On-process</button>
                     </li>
-                  </ul>
-                  <div class="tab-content" id="myTabContent">
+                </ul>
+                <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
                         <div class="boxes">
                             
@@ -1254,7 +1254,52 @@
                            
                         </div>
                     </div>
-                  </div>
+                </div> -->
+                <div class="work__boxes">
+                    <div class="work__box">
+                        <div class="work__img">
+                            <img src="Assests/Images-M/work-3.png" alt="works">
+                            <p class="onprogress false">on progress</p>
+                        </div>
+                        <div class="work__content">
+                            <p>Technologies : HTML,CSS,Bootstrap,Javascript,Jquery </p>
+                            <p>Live Demo : <a href="https://skilluptechbuzz.in/" target="_blank" title="link">https://skilluptechbuzz.in/</a></p>
+                        </div>
+                    </div>
+                    <div class="work__box">
+                        <div class="work__img">
+                            <img src="Assests/Images-M/work-29.png" alt="works">
+                            <p class="onprogress true">on progress</p>
+                        </div>
+                        <div class="work__content">
+                            <p>Technologies : HTML,CSS,Tailwind,React </p>
+                            <p>Live Demo : <a href="https://scoopy-react.vercel.app/" target="_blank" title="link">https://scoopy-react.vercel.app/</a></p>
+                        </div>
+                    </div>
+                    <div class="work__box">
+                        <div class="work__img">
+                            <img src="Assests/Images-M/work-25.png" alt="works">
+                            <p class="onprogress true">on progress</p>
+                        </div>
+                        <div class="work__content">
+                            <p>Technologies : HTML,CSS,Javascript </p>
+                            <p>Live Demo : <a href="https://mathi-ms.github.io/Nostra/" target="_blank" title="link">https://mathi-ms.github.io/Nostra/</a></p>
+                        </div>
+                    </div>
+                    <div class="work__box">
+                        <div class="work__img">
+                            <img src="Assests/Images-M/work-20.png" alt="works">
+                            <p class="onprogress false">on progress</p>
+                        </div>
+                        <div class="work__content">
+                            <p>Technologies : HTML,CSS,Bootstrap,Javascript </p>
+                            <p>Live Demo : <a href="https://mathi-ms.github.io/MERN-Mastering.hub/" target="_blank" title="link">https://mathi-ms.github.io/MERN-Mastering.hub/</a></p>
+                        </div>
+                    </div>
+                </div>
+                <a href="work.html" title="Show More" class="workshowmore">
+                    <span>Show More</span>
+                </a>
             </div>
         </section>
 
@@ -1327,6 +1372,12 @@
     <script>
         $(".navbar .nav-item .nav-link.act").on("click", function () {
           $(".navbar").find(".active").removeClass("active");
+          $(this).addClass("active");
+        });
+    </script>
+    <script>
+        $(".sideenav .nav-item .nav-link.act").on("click", function () {
+          $(".sideenav").find(".active").removeClass("active");
           $(this).addClass("active");
         });
     </script>
