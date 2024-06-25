@@ -1643,7 +1643,7 @@ footer .footer-bo a{
         display: inline-block;
         background-color: #264de4;
         border-radius: 200px;
-        margin-right: 8px;
+        margin-right: 3px;
     }
 }
 @media(max-width:500px){
