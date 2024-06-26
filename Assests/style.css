@@ -191,9 +191,9 @@ header .side-nav{
     height: 100vh;
     position: fixed;
     top: 0px;
-    background-color: black;    
+    background-color:#141618;    
     transition:.5s;
-    transform:translateX(-100%);
+    transform:translateX(-500%);
 }
 header .side-navlist{
     list-style-type: none;
