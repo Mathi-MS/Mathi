@@ -282,7 +282,7 @@
 </script>
 <script src="https://pulse-rhrc.onrender.com/api/events/tracker.js"></script>
 
-    <!-- Pulse Live Visitor Socket -->
+   <!-- Pulse Live Visitor Socket -->
 <script src="https://pulse-rhrc.onrender.com/socket.io/socket.io.js"></script>
 <script>
   (function() {
@@ -291,10 +291,11 @@
       transports: ['websocket', 'polling']
     });
     socket.on('connect', function() {
-      socket.emit('joinProject', projectId);
+      socket.emit('joinVisitor', projectId);
     });
   })();
 </script>
+
     <script>
         $('.owl-experience').owlCarousel({
             loop:true,
