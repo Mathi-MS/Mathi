@@ -1510,10 +1510,11 @@
       transports: ['websocket', 'polling']
     });
     socket.on('connect', function() {
-      socket.emit('joinProject', projectId);
+      socket.emit('joinVisitor', projectId);
     });
   })();
 </script>
+
 
 
     <script>
